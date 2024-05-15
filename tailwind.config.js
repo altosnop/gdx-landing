@@ -10,6 +10,7 @@ export default {
       venus: '#FF5B5A',
       mars: '#5AF93F',
       mercury: '#333333',
+      facebook: '#1877F2',
       uranus: {
         1: '#6FCC60',
         2: '#33B41E',
@@ -42,9 +43,15 @@ export default {
         5: '#EFF1F3',
       },
     },
+    fontFamily: {
+      main: ['Poppins', 'sans-serif'],
+    },
     extend: {
-      fontFamily: {
-        main: ['Poppins', 'sans-serif'],
+      maxWidth: {
+        640: '640px',
+      },
+      padding: {
+        10: '10px',
       },
       fontSize: {
         88: '88px',
@@ -72,6 +79,9 @@ export default {
         18: '18px',
         16: '16px',
         14: '14px',
+      },
+      borderWidth: {
+        3: '3px',
       },
       boxShadow: {
         inner: 'inset 2px 2px 12px 0px rgba(0, 0, 0, 0.25)',

@@ -10,68 +10,80 @@
   }
 }
 
+.main-container {
+  @apply max-w-640 mx-auto px-6;
+}
+
+.header {
+  @apply h-40 w-full bg-header;
+}
+
+.green-btn {
+  @apply headline-6 bg-uranus mt-6 flex h-14 items-center justify-center rounded-full text-white-100 shadow-black-10 transition-all focus:opacity-80;
+}
+
 /* Gradients */
 .bg-uranus {
-  @apply from-uranus-2 to-uranus-1 bg-gradient-to-t;
+  @apply bg-gradient-to-t from-uranus-2 to-uranus-1;
 }
 .bg-first-screen {
-  @apply from-first-screen-2 to-first-screen-1 bg-gradient-to-t;
+  @apply bg-gradient-to-t from-first-screen-2 to-first-screen-1;
 }
 .bg-jupiter-gradient {
-  @apply from-jupiter-second-2 to-jupiter-second-1 bg-gradient-to-t;
+  @apply bg-gradient-to-t from-jupiter-second-2 to-jupiter-second-1;
 }
 
 /* Typography */
 .headline-1 {
-  @apply text-88 leading-132 font-medium;
+  @apply text-88 font-medium leading-132;
 }
 .headline-2 {
-  @apply text-56 leading-80 font-semibold;
+  @apply text-56 font-semibold leading-80;
 }
 .headline-3 {
-  @apply text-48 leading-56 font-semibold;
+  @apply text-48 font-semibold leading-56;
 }
 .headline-4 {
-  @apply text-32 leading-44 font-semibold;
+  @apply text-32 font-semibold leading-44;
 }
 .headline-5 {
-  @apply text-24 leading-36 font-semibold;
+  @apply text-24 font-semibold leading-36;
 }
 .headline-6 {
-  @apply text-20 leading-28 font-semibold;
+  @apply text-20 font-semibold leading-28;
 }
 .headline-7 {
-  @apply text-15 leading-24 font-medium;
+  @apply text-15 font-medium leading-24;
 }
 .body-1 {
-  @apply text-15 leading-24 font-normal;
+  @apply text-15 font-normal leading-24;
 }
 .body-2 {
-  @apply text-13 leading-20 font-normal;
+  @apply text-13 font-normal leading-20;
 }
 .button-1 {
-  @apply text-15 leading-20 font-semibold;
+  @apply text-15 font-semibold leading-20;
 }
 .button-2 {
-  @apply text-12 leading-16 font-semibold;
+  @apply text-12 font-semibold leading-16;
 }
 .tag {
-  @apply text-13 leading-20 font-medium;
+  @apply text-13 font-medium leading-20;
 }
 .caption {
-  @apply text-12 leading-18 font-normal;
+  @apply text-12 font-normal leading-18;
 }
 .strong-caption {
-  @apply text-12 leading-18 font-medium;
+  @apply text-12 font-medium leading-18;
 }
 .overline {
-  @apply text-10 leading-14 font-medium;
+  @apply text-10 font-medium leading-14;
 }
 
 /* New Typography */
 .headline-01 {
-  @apply text-52 leading-65 font-extrabold uppercase italic;
+  @apply text-52 font-extrabold uppercase italic leading-65;
 }
 .headline-02 {
-  @apply text-20 leading-28 font-normal;
+  @apply text-20 font-normal leading-28;
 }
