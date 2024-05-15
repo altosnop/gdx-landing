@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: theme(fontFamily.main);
+  }
+}
+
+/* Gradients */
+.bg-uranus {
+  @apply from-uranus-2 to-uranus-1 bg-gradient-to-t;
+}
+.bg-first-screen {
+  @apply from-first-screen-2 to-first-screen-1 bg-gradient-to-t;
+}
+.bg-jupiter-gradient {
+  @apply from-jupiter-second-2 to-jupiter-second-1 bg-gradient-to-t;
+}
+
+/* Typography */
+.headline-1 {
+  @apply text-88 leading-132 font-medium;
+}
+.headline-2 {
+  @apply text-56 leading-80 font-semibold;
+}
+.headline-3 {
+  @apply text-48 leading-56 font-semibold;
+}
+.headline-4 {
+  @apply text-32 leading-44 font-semibold;
+}
+.headline-5 {
+  @apply text-24 leading-36 font-semibold;
+}
+.headline-6 {
+  @apply text-20 leading-28 font-semibold;
+}
+.headline-7 {
+  @apply text-15 leading-24 font-medium;
+}
+.body-1 {
+  @apply text-15 leading-24 font-normal;
+}
+.body-2 {
+  @apply text-13 leading-20 font-normal;
+}
+.button-1 {
+  @apply text-15 leading-20 font-semibold;
+}
+.button-2 {
+  @apply text-12 leading-16 font-semibold;
+}
+.tag {
+  @apply text-13 leading-20 font-medium;
+}
+.caption {
+  @apply text-12 leading-18 font-normal;
+}
+.strong-caption {
+  @apply text-12 leading-18 font-medium;
+}
+.overline {
+  @apply text-10 leading-14 font-medium;
+}
+
+/* New Typography */
+.headline-01 {
+  @apply text-52 leading-65 font-extrabold uppercase italic;
+}
+.headline-02 {
+  @apply text-20 leading-28 font-normal;
+}
