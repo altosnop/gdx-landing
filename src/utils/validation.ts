@@ -31,8 +31,17 @@ const email = (email: string): string => {
   return error
 }
 
+const checkbox = (agreed: boolean): string => {
+  let error = ''
+  if (!agreed) {
+    error = 'Agree all policies before proceed'
+  }
+  return error
+}
+
 export default {
   name,
   password,
   email,
+  checkbox,
 }

@@ -14,7 +14,7 @@ const PageFour = () => {
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
 
-  const onInputChange = (value: string) => {
+  const handlePasswordChange = (value: string) => {
     setPassword(value)
   }
 
@@ -25,9 +25,9 @@ const PageFour = () => {
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const error = validation.password(password)
-    if (error) {
-      setError(error)
+    const passError = validation.password(password)
+    if (passError) {
+      setError(passError)
     } else {
       console.log(password)
       localStorage.setItem('password', password)
@@ -61,7 +61,7 @@ const PageFour = () => {
         <form onSubmit={onSubmit}>
           <PasswordInput
             value={password}
-            onChange={onInputChange}
+            onChange={handlePasswordChange}
             onFocus={handleFocus}
           />
           {error ? (

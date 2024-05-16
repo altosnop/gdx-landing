@@ -13,7 +13,7 @@ const PageThree = () => {
   const [name, setName] = useState('')
   const [error, setError] = useState<string | null>(null)
 
-  const onInputChange = (value: string) => {
+  const handleNameChange = (value: string) => {
     setName(value)
   }
 
@@ -24,9 +24,9 @@ const PageThree = () => {
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const error = validation.name(name)
-    if (error) {
-      setError(error)
+    const nameError = validation.name(name)
+    if (nameError) {
+      setError(nameError)
     } else {
       console.log(name)
       localStorage.setItem('name', name)
@@ -56,7 +56,7 @@ const PageThree = () => {
             value={name}
             type="text"
             placeholder="Your name"
-            onChange={onInputChange}
+            onChange={handleNameChange}
             onFocus={handleFocus}
           />
           <span className="headline-7 mt-1 inline-block text-dark-2">
