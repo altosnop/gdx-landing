@@ -1,122 +1,7 @@
-import Card1 from './../../assets/card-1.png'
-import Card2 from './../../assets/card-2.png'
-import Card3 from './../../assets/card-3.png'
-import Card4 from './../../assets/card-4.png'
-import Card5 from './../../assets/card-5.png'
-import Card6 from './../../assets/card-6.png'
-import Card7 from './../../assets/card-7.png'
-import Card8 from './../../assets/card-8.png'
-import Card9 from './../../assets/card-9.png'
-import Card10 from './../../assets/card-10.png'
-import Card11 from './../../assets/card-11.png'
-import Card12 from './../../assets/card-12.png'
-import Card13 from './../../assets/card-13.png'
-import Card14 from './../../assets/card-14.png'
-import Card15 from './../../assets/card-15.png'
-import Card16 from './../../assets/card-16.png'
-import Card17 from './../../assets/card-17.png'
 import SearchIcon from './../../assets/magnifier.svg'
 import { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
-
-interface ImageData {
-  id: number
-  url: string
-  width: number
-  isRef?: boolean
-}
-
-const imageData: ImageData[] = [
-  {
-    id: 9,
-    url: Card9,
-    width: 97.25,
-    isRef: true,
-  },
-  {
-    id: 1,
-    url: Card1,
-    width: 97.25,
-    isRef: true,
-  },
-  {
-    id: 3,
-    url: Card3,
-    width: 50.56,
-    isRef: true,
-  },
-  {
-    id: 10,
-    url: Card10,
-    width: 113.03,
-    isRef: true,
-  },
-  {
-    id: 2,
-    url: Card2,
-    width: 48.25,
-  },
-  {
-    id: 4,
-    url: Card4,
-    width: 50.56,
-  },
-  {
-    id: 5,
-    url: Card5,
-    width: 33.06,
-  },
-  {
-    id: 6,
-    url: Card6,
-    width: 33.06,
-  },
-  {
-    id: 7,
-    url: Card7,
-    width: 43.8,
-  },
-  {
-    id: 8,
-    url: Card8,
-    width: 81.15,
-  },
-  {
-    id: 11,
-    url: Card11,
-    width: 67.63,
-  },
-  {
-    id: 12,
-    url: Card12,
-    width: 66.98,
-  },
-  {
-    id: 13,
-    url: Card13,
-    width: 63.44,
-  },
-  {
-    id: 14,
-    url: Card14,
-    width: 74.58,
-  },
-  {
-    id: 15,
-    url: Card15,
-    width: 41.54,
-  },
-  {
-    id: 16,
-    url: Card16,
-    width: 48.31,
-  },
-  {
-    id: 17,
-    url: Card17,
-    width: 67.63,
-  },
-]
+import imageData from './data'
 
 const PageTwo = () => {
   const navigate = useNavigate()
@@ -151,11 +36,13 @@ const PageTwo = () => {
           const dy = cardRect.top - containerRect.top
 
           iconElement.style.transform = `translate(${dx}px, ${dy}px)`
-          iconElement.style.transition = 'transform 1s ease'
+          iconElement.style.transition = 'transform 0.5s ease'
         }
 
-        cardElement.classList.add('highlighted')
-        cardElement.classList.remove('opacity-40')
+        setTimeout(() => {
+          cardElement.classList.add('highlighted')
+          cardElement.classList.remove('opacity-40')
+        }, 200)
 
         setTimeout(() => {
           cardElement.classList.remove('highlighted')
@@ -175,39 +62,39 @@ const PageTwo = () => {
   const getPositionStyles = (id: number) => {
     switch (id) {
       case 1:
-        return 'top-0 left-0'
+        return 'top-[41px] left-[50%]'
       case 2:
-        return 'top-0 right-0'
+        return 'top-[158px] right-[5%]'
       case 3:
-        return 'top-[16.67%] right-[33.33%]'
+        return 'top-[328px] left-[8%]'
       case 4:
-        return 'top-[180px] left-[50px]'
+        return 'top-[224px] left-[17%]'
       case 5:
-        return 'top-[180px] right-[180px]'
+        return 'top-[374px] left-[29%]'
       case 6:
-        return 'top-[260px] left-[120px]'
+        return 'top-[547px] right-[20%]'
       case 7:
-        return 'top-[260px] right-[50px]'
+        return 'top-[562px] left-[5%]'
       case 8:
-        return 'top-[340px] right-[180px]'
+        return 'top-[253px] right-[-5%]'
       case 9:
-        return 'top-[420px] left-0'
+        return 'top-[216px] left-[40%]'
       case 10:
-        return 'top-[420px] right-[120px]'
+        return 'top-[444px] left-[25%]'
       case 11:
-        return 'top-[500px] left-[180px]'
+        return 'top-[496px] right-[-5%]'
       case 12:
-        return 'bottom-[100px] left-[50px]'
+        return 'top-[392px] right-[17%]'
       case 13:
-        return 'bottom-[20px] left-[120px]'
+        return 'top-[106px] left-[20%]'
       case 14:
-        return 'bottom-[100px] right-[180px]'
+        return 'top-[430px] left-[-3%]'
       case 15:
-        return 'bottom-[20px] right-[50px]'
+        return 'top-[51px] right-[6%]'
       case 16:
-        return 'bottom-[180px] left-[250px]'
-      case 117:
-        return 'bottom-[180px] right-[120px]'
+        return 'top-[23px] left-[12%]'
+      case 17:
+        return 'top-[175px] left-[-5%]'
       default:
         return ''
     }
@@ -228,7 +115,7 @@ const PageTwo = () => {
             src={img.url}
             width={img.width}
             ref={img.isRef ? el => handleCardRef(el, index) : null}
-            className={`hover:highlighted opacity-40 transition-all ${getPositionStyles(img.id)}`}
+            className={`absolute opacity-40 transition-all ${getPositionStyles(img.id)}`}
           />
         ))}
       </div>
