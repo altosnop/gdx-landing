@@ -91,8 +91,8 @@ export default {
       },
       backgroundImage: {
         main: "linear-gradient(180deg, #293FFF66, #293FFFCC 100%), url('/bg.webp')",
-        header: "url('/header.png')",
-        footer: "url('/footer.png')",
+        header: "url('/header.webp')",
+        footer: "url('/footer.webp')",
       },
     },
   },
