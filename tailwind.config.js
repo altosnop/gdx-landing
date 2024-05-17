@@ -90,7 +90,7 @@ export default {
         'black-10': '0px 0px 8px 0px rgba(0, 0, 0, 0.1)',
       },
       backgroundImage: {
-        main: "linear-gradient(180deg, #293FFF66, #293FFFCC 100%), url('/bg.png')",
+        main: "linear-gradient(180deg, #293FFF66, #293FFFCC 100%), url('/bg.webp')",
         header: "url('/header.png')",
         footer: "url('/footer.png')",
       },
