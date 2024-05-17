@@ -16,7 +16,7 @@
     @apply mx-auto max-w-640 px-6;
   }
   .header {
-    @apply h-40 w-full bg-header;
+    @apply h-[180px] w-full bg-header bg-contain;
   }
 
   .green-btn {

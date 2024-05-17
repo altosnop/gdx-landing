@@ -1,6 +1,6 @@
 const PageTwo = () => {
   return (
-    <div>
+    <div className="h-screen w-full bg-neptune">
       <h1>Page Two</h1>
     </div>
   )

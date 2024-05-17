@@ -15,7 +15,7 @@ const Input = ({ value, type, placeholder, onChange, onFocus }: InputProps) => {
     <input
       type={type}
       name={type}
-      className="w-full rounded-lg p-3 shadow-inner outline-none"
+      className="placeholder:headline-7 w-full rounded-lg p-3 shadow-inner outline-none"
       placeholder={placeholder}
       value={value}
       onChange={onInputChange}

@@ -18,7 +18,7 @@ const PageSix = () => {
           Search
         </button>
       </div>
-      <footer className="h-[180px] w-full bg-footer"></footer>
+      <footer className="h-[180px] w-full bg-footer bg-contain"></footer>
     </div>
   )
 }

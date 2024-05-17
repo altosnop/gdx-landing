@@ -6,7 +6,7 @@ const PageSection = () => {
       <header className="header"></header>
       <div className="main-container">
         <a
-          className="button-1 text-facebook flex w-full items-center justify-center rounded bg-white-100 py-3 transition-all focus:bg-white-100/80"
+          className="button-1 mt-[-10px] flex w-full items-center justify-center rounded bg-white-100 py-3 text-facebook transition-all focus:bg-white-100/80"
           href="https://www.facebook.com/"
           target="_blank"
         >
