@@ -40,7 +40,6 @@ const PageFive = () => {
     checkboxErr ? setCheckboxError(checkboxErr) : setCheckboxError(null)
 
     if (!emailErr && !checkboxErr) {
-      console.log(email)
       localStorage.setItem('email', email)
       return navigate(ROUTER_KEYS.PAGE_6)
     }

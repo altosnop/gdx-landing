@@ -29,7 +29,6 @@ const PageFour = () => {
     if (passError) {
       setError(passError)
     } else {
-      console.log(password)
       localStorage.setItem('password', password)
 
       setError(null)

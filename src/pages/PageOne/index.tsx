@@ -21,7 +21,7 @@ const PageOne = () => {
         </h1>
         <Link
           to={ROUTER_KEYS.PAGE_2}
-          className="headline-4 mt-6 box-border flex h-16 w-full items-center justify-center rounded-full border-3 border-jupiter bg-mercury uppercase text-white-100 shadow-black-50 transition-all hover:bg-mercury/80 focus:bg-mercury/80"
+          className="headline-4 mt-6 box-border flex h-16 w-full items-center justify-center rounded-full border-3 border-jupiter bg-mercury uppercase text-white-100 shadow-black-50 transition-all focus:bg-mercury/80"
         >
           START
         </Link>

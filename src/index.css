@@ -19,7 +19,7 @@
     @apply h-[180px] w-full bg-header bg-contain;
   }
   .green-btn {
-    @apply headline-6 bg-uranus mt-6 flex h-14 items-center justify-center rounded-full text-white-100 shadow-black-10 transition-all hover:opacity-80 focus:opacity-80;
+    @apply headline-6 bg-uranus mt-6 flex h-14 items-center justify-center rounded-full text-white-100 shadow-black-10 transition-all focus:opacity-80;
   }
   .highlighted {
     @apply opacity-100 shadow-black-50;

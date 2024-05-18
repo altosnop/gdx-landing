@@ -28,7 +28,6 @@ const PageThree = () => {
     if (nameError) {
       setError(nameError)
     } else {
-      console.log(name)
       localStorage.setItem('name', name)
 
       setError(null)
