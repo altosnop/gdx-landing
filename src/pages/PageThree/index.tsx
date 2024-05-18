@@ -62,7 +62,9 @@ const PageThree = () => {
           <span className="headline-7 mt-1 inline-block text-dark-2">
             Please enter your name only
           </span>
-          {error && <Error error={error} style="items-start" />}
+          {error && (
+            <Error error={error} style="items-start" imgStyle="mt-[3px]" />
+          )}
           <button className="green-btn w-full" type="submit">
             Next
           </button>

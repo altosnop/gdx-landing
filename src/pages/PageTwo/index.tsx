@@ -67,8 +67,8 @@ const PageTwo = () => {
   }, [navigate])
 
   return (
-    <div className="h-screen w-full bg-neptune">
-      <div className="relative mx-auto grid max-w-640 grid-cols-4 gap-2">
+    <div className="h-screen w-full overflow-x-hidden overflow-y-hidden bg-neptune">
+      <div className="relative mx-auto h-full max-w-640">
         <img
           className="absolute z-10"
           src={SearchIcon}
